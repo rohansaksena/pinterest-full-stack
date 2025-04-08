@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './UserButton.css'
 import {NavLink} from 'react-router-dom'
+import Image from '../Image/Image';
 
 function UserButton() {
 
@@ -9,8 +10,8 @@ function UserButton() {
 
   return user ? (
     <div className="userButton">
-        <img src="general/noAvatar.png" alt="userAvatar"/>
-        <img src="general/arrow.svg" 
+        <Image path="general/noAvatar.png" alt="userAvatar"/>
+        <Image path="general/arrow.svg" 
         className='arrow' 
         onClick={() => setOpen((prev) => !prev)} 
         alt="dropDownArrow"/>
